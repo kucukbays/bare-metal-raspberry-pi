@@ -17,7 +17,7 @@ mkdir build
 ```
 - Run the CMake command below to generate the Makefile inside the build/ directory:
 ```
-cmake -Bbuild/ -S./ 
+cmake -DCMAKE_TOOLCHAIN_FILE=toolchain-arm-none-eabi.cmake  -Bbuild/ -S./ 
 ```
 - Go to the build/ directory and run the 'make' command to generate the 'kernel7.img' binary:
 ```
